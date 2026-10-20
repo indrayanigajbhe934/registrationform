@@ -1,0 +1,100 @@
+
+/* General Page Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a5acd, #b19cd9);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Registration Form Card */
+.form-container {
+    background-color: white;
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #5636c9;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Form Labels */
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #6a5acd;
+    box-shadow: 0 0 5px rgba(106, 90, 205, 0.3);
+}
+
+/* Register Button */
+button {
+    width: 100%;
+    padding: 13px;
+    background-color: #5636c9;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3e2699;
+}
+
+/* Validation Message */
+#message {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 22px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
